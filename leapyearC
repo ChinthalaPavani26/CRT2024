@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int a;
+    scanf("%d",&a);
+    if(a%4 == 0 &&(a%100!=0 || a%400 == 0 ))
+    {
+        printf("Leap Year");
+    }
+    else
+    {
+        printf("Not Leap Year");
+    }
+
+    return 0;
+}
