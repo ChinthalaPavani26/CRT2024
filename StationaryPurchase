@@ -1,0 +1,147 @@
+Stationary Purchase 1
+Problem
+Submissions
+Leaderboard
+Discussions
+Mr.Kumar went to purchase stationary items for his office. He asked the shopkeeper for a discount. The shopkeeper said that if he purchases more than 200 quantity of the item, then a discount of 20% can be applied on the total bill amount, excluding the GST. Get the Quantity and price per item as an input and calculate and tell whether Mr.Kumar is eligible for the discount and what would be the net amount he has to pay after the discount. Take the GST at 18%. Net Amount = Total bill amount after discount + GST
+
+Input Format
+
+Enter quantity Enter price per unit
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Print the output
+
+Sample Input 0
+
+100
+5
+Sample Output 0
+
+Quantity Ordered 100
+Price per item is Rs.5
+Total Amount = Rs.500
+GST - Rs.90.0
+Net Amount Payable is Rs.590.0
+Submissions: 26
+Max Score: 20
+Difficulty: Medium
+Rate This Challenge:
+
+    
+**********************************************************************************************************************************************************************************************************
+ 
++
+1
+#include <stdio.h>
+2
+#include <string.h>
+3
+#include <math.h>
+4
+#include <stdlib.h>
+5
+​
+6
+int main() {
+7
+​
+8
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+9
+    int quantity,ppu;
+10
+    scanf("%d%d",&quantity,&ppu);
+11
+    printf("Quantity Ordered %d\n",quantity);
+12
+    printf("Price per item is Rs.%d\n",ppu);
+13
+    int totalamount ,discount;
+14
+    float GST ,Netamount;
+15
+    
+16
+    if(quantity > 200)
+17
+    {
+18
+        discount = quantity * 20/100;
+19
+        totalamount = (quantity * ppu) - discount;
+20
+        GST = totalamount * 18/100;
+21
+        Netamount = totalamount + GST;
+22
+        
+23
+        
+24
+    }
+25
+    else
+26
+    {
+27
+        totalamount = (quantity * ppu);
+28
+        GST = totalamount * 18/100;
+29
+        Netamount = totalamount + GST;
+30
+        
+31
+        
+32
+    }
+33
+   // printf("Quantity Ordered %d\n",quantity);
+34
+    //printf("Price per item is Rs.%d\n",ppu);
+35
+    printf("Total Amount = Rs.%d\n",totalamount);
+36
+    printf("GST - Rs.%.1f\n",GST);
+37
+    printf("Net Amount Payable is Rs.%.1f\n",Netamount);
+38
+    return 0;
+39
+}
+40
+***************************************************************************************************************************************************************************************************************
+​
+Line: 29 Col: 34
+Run Code Submit CodeUpload Code as File 
+Test against custom input
+Testcase 0
+Congratulations, you passed the sample test case.
+
+Click the Submit Code button to run your code against all the test cases.
+
+Input (stdin)
+
+100
+5
+Your Output (stdout)
+
+Quantity Ordered 100
+Price per item is Rs.5
+Total Amount = Rs.500
+GST - Rs.90.0
+Net Amount Payable is Rs.590.0
+Expected Output
+
+Quantity Ordered 100
+Price per item is Rs.5
+Total Amount = Rs.500
+GST - Rs.90.0
+Net Amount Payable is Rs.590.0
+Intervie
