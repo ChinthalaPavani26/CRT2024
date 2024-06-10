@@ -1,0 +1,30 @@
+include <stdio.h>
+
+int main() {
+    int n = 10;  // You can change this value to get a different size of pattern
+
+    for(int i = 0; i < n; i++) {
+        // Print leading spaces
+        for(int j = 0; j < i; j++) {
+            printf(" ");
+        }
+        // Print stars
+        for(int k = n; k > i; k--) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+outpot:
+Sample Input 0
+
+5
+Sample Output 0
+
+*****
+ ****
+  ***
+   **
+    *
