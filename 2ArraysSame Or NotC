@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main(){
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int n1;
+    int n2;
+    scanf("%d",&n2);
+    scanf("%d",&n1);
+    int a1[n1];
+    for(int i = 0;i < n1;i++)
+    {
+        scanf("%d",&a1[i]);
+    }
+    
+    
+    if(n1 != n2)
+    {
+        printf("Not Same");
+        return 0;
+    }
+    
+
+    int a2[n2];
+    for(int i = 0;i < n2;i++)
+    {
+        scanf("%d",&a2[i]);
+        
+    }
+    for(int i =0;i< n1;i++)
+    {
+        if(a1[i] != a2[i])
+        {
+            printf("Not Same");
+            return 0;
+        }
+    }
+    printf("Same");
+    
+    return 0;
+}
+    
+    
