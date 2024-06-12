@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int n1,n2;
+    scanf("%d%d",&n1,&n2);
+    int MatA[n1][n2],MatB[n1][n2];
+    int i ,j;
+    for(i = 0;i<n1;i++)
+    {
+        for(j = 0;j<n2;j++)
+        {
+            scanf("%d",&MatA[i][j]);
+        }
+    }
+    for(i = 0;i<n1;i++)
+    {
+        for(int j = 0;j<n2;j++)
+        {
+            scanf("%d",&MatB[i][j]);
+            
+        }
+    }
+    int MatC[n1][n1];
+    for(i = 0;i<n1;i++)
+    {
+        for( j = 0;j<n2;j++)
+        {
+            MatC[i][j] = MatA[i][j] + MatB[i][j];
+         }
+    }
+    for( i = 0;i<n1;i++)
+    {
+        
+    for( j = 0;j<n2;j++)
+    {
+    printf("%d ",MatC[i][j]);
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
