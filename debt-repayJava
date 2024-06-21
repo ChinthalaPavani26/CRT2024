@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        int principal_amount,rateofintrest,years;
+        Scanner sc = new Scanner(System.in);
+        principal_amount = sc.nextInt();
+        rateofintrest = sc.nextInt();
+        years = sc.nextInt();
+        float intrest = ((principal_amount * rateofintrest * years)/(100));
+        float Tamount = (principal_amount + intrest);
+        float discount = (2 * intrest)/100;
+        float finalA = Tamount - discount;
+        System.out.printf("%.2f\n%.2f\n%.2f\n%.2f\n",intrest,Tamount,discount,finalA);
+    }
+}
