@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        int students;
+        Scanner sc = new Scanner(System.in);
+        students = sc.nextInt();
+        
+        if(students > 100 && students < 200)
+        { 
+            int groups = students / 4;
+        int rem = students % 4;
+            System.out.printf("%d\n%d\n%d\n%d\n",groups,groups,groups,groups+rem);
+        }
+        else
+        {
+            System.out.println("INVALID INPUT");
+        }
+        
+         
+    }
+}
