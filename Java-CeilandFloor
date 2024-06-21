@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        float num;
+        Scanner sc = new Scanner(System.in);
+        num = sc.nextFloat();
+        int res1 = (int)num;
+        System.out.println(res1);
+        double res2 =Math.ceil(num);
+        System.out.println(res2);
+        double res3 = Math.floor(num);
+        System.out.println(res3);
+    }
+}
